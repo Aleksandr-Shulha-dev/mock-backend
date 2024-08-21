@@ -1,0 +1,116 @@
+{
+  "id": 369919443,
+  "is_active": true,
+  "bot_lang": "en",
+  "total_balance": 7000.77,
+  "networks": [
+    {
+      "address": "7bbdca4274b8bb1d6175e00c9f0168e1f80d95cb50de05101f3baa45d21ddbb5",
+      "min_withdraw_limit": {
+        "1": 0.1
+      },
+      "withdrawal_fee": {
+        "1": 0.05
+      },
+      "id": 1,
+      "name": "Near Protocol",
+      "short_name": "NEAR",
+      "updated_date": "2024-02-06T12:46:35.481360"
+    },
+    {
+      "address": "EQB_nczW35CZ0UOiVTTkI8iatC0GVScs3LwamYZnbah6O08e",
+      "min_withdraw_limit": {
+        "2": 0.1,
+        "3": 0.1,
+        "4": 0.1
+      },
+      "withdrawal_fee": {
+        "2": 0.05,
+        "4": 0.05,
+        "3": 0.05
+      },
+      "id": 2,
+      "name": "The Open Network",
+      "short_name": "TON",
+      "updated_date": "2024-02-06T12:45:19.747101"
+    },
+    {
+      "address": "TDHHUH1TnoEuWHUkLSSP2XYs1S8ofJfspn",
+      "min_withdraw_limit": {
+        "3": 0.2
+      },
+      "withdrawal_fee": {
+        "3": 0.15
+      },
+      "id": 3,
+      "name": "TRON BlockChain",
+      "short_name": "TRON"
+    }
+  ],
+  "balances": [
+    {
+      "coin": {
+        "name": "NEAR",
+        "short_name": "NEAR",
+        "digits": 24,
+        "price": 2.7,
+        "image": "icon_near.svg",
+        "get_image": "https://mycapbot.com/api/v1/images/icon_near.svg",
+        "is_native": true,
+        "network_id": [1, 2],
+        "coin_id": 1
+      },
+      "balance": 0,
+      "balance_amount": 12.3,
+      "balance_usd": 33.21
+    },
+    {
+      "coin": {
+        "name": "TON",
+        "short_name": "TON",
+        "digits": 9,
+        "price": 2.05555,
+        "image": "icon_ton.svg",
+        "get_image": "https://mycapbot.com/api/v1/images/icon_ton.svg",
+        "is_native": true,
+        "network_id": [2],
+        "coin_id": 2
+      },
+      "balance": 0,
+      "balance_amount": 15.56432,
+      "balance_usd": 31.861025
+    },
+    {
+      "coin": {
+        "name": "DeFinder Capital",
+        "short_name": "DFC",
+        "digits": 9,
+        "price": 2.4899288730056943,
+        "image": "icon_dfc.svg",
+        "get_image": "https://volreviews.com/api/v1/images/icon_dfc.svg",
+        "is_native": false,
+        "network_id": [2],
+        "coin_id": 4
+      },
+      "balance": 68040000000,
+      "balance_amount": 68.04,
+      "balance_usd": 169.4147
+    },
+    {
+      "coin": {
+        "name": "USDT",
+        "short_name": "USDT",
+        "digits": 6,
+        "price": 1,
+        "image": "icon_usdt.svg",
+        "is_native": true,
+        "network_id": [2, 3],
+        "coin_id": 3
+      },
+      "balance": 0,
+      "balance_amount": 0.359,
+      "balance_usd": 0.359
+    }
+  ],
+  "candidate_id": null
+}

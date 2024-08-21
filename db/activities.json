@@ -1,0 +1,62 @@
+{
+  "user": {
+    "avatar_url": "bull.svg",
+    "username": "Grzegorz Brzęczyszczykiewicz, Chrząszczyżewoszyce",
+    "energy": 998,
+    "points_balance": 1000
+  },
+  "organizations": [
+    {
+      "id": 101,
+      "photo_url": "https://stormgain.com/sites/default/files/2023-08/tether-price-prediction-main.jpg",
+      "company_name": "Tether Company",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "campaigns_amount": 50,
+      "total_rewards_amount": 10000,
+      "rewards_currencies": ["NEAR", "TON"]
+    },
+    {
+      "id": 201,
+      "photo_url": "https://img.freepik.com/premium-photo/neon-bitcoin_711593-122.jpg",
+      "company_name": "Bitcoin Company",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "campaigns_amount": 100,
+      "total_rewards_amount": 50000,
+      "rewards_currencies": ["NEAR", "TON"]
+    },
+    {
+      "id": 301,
+      "photo_url": "https://img.capital.com/imgs/articles/662x308x0/shutterstock_2032084658.jpg",
+      "company_name": "Near Company",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "campaigns_amount": 50,
+      "total_rewards_amount": 10000,
+      "rewards_currencies": ["DFC", "TON"]
+    }
+  ],
+  "leaderboard": {
+    "list": [
+      {
+        "username": "BB0asd asdf asdf asdf asdf asdf asdf asdf asdf asdf asd asdf as",
+        "avatar_url": "",
+        "points_earned": 5900000
+      },
+      {
+        "username": "asdfasdf",
+        "avatar_url": "",
+        "points_earned": 12000
+      },
+      {
+        "username": "asdfasdf",
+        "avatar_url": "",
+        "points_earned": 12000
+      }
+    ],
+    "me": {
+      "username": "FF0",
+      "avatar_url": "",
+      "points_earned": 4900,
+      "leaderboard_position": 4
+    }
+  }
+}

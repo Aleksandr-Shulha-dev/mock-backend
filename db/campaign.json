@@ -1,0 +1,71 @@
+{
+  "id": 101,
+  "title": "Campaign title",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "photo_url": "https://cdn.pixabay.com/photo/2018/01/18/07/31/bitcoin-3089728_1280.jpg",
+  "created_date": "",
+  "expiration_date": "",
+  "energy_cost": 50,
+  "customer_id": 1,
+  "is_started_by_user": false,
+  "total_campaign_limit": 44000,
+  "claimed_rewards_percentage": 10,
+  "stages": [
+    {
+      "id": 1,
+      "title": "Stage 1",
+      "description": "",
+      "stage_complexity": "EASY",
+      "stage_reward_amount": "1000",
+      "stage_reward_currency": "POINTS",
+      "image": "icon_ton.svg",
+      "is_opened": false,
+      "is_rewarded": false,
+      "stories": [],
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Task name 1",
+          "description": "Lorem ipsum dolor sit amet",
+          "task_type": "",
+          "task_topic": "",
+          "payload": "https://x.com/addlyy_eth",
+          "task_reward_amount": "1.1232",
+          "task_reward_currency": "TON",
+          "image": "icon_ton.svg",
+          "is_completed": false,
+          "is_reward_claimed": false,
+          "is_opened": true
+        },
+        {
+          "id": 2,
+          "title": "Task name 2",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "task_type": "",
+          "task_topic": "",
+          "payload": "https://twitter.com/?lang=uk",
+          "task_reward_amount": "2",
+          "task_reward_currency": "NEAR",
+          "image": "icon_near.svg",
+          "is_completed": false,
+          "is_reward_claimed": false,
+          "is_opened": true
+        },
+        {
+          "id": 3,
+          "title": "Task name 3",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "task_type": "",
+          "task_topic": "",
+          "payload": "https://twitter.com/?lang=uk",
+          "task_reward_amount": "10",
+          "task_reward_currency": "POINTS",
+          "image": "",
+          "is_completed": false,
+          "is_reward_claimed": false,
+          "is_opened": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "id": 100001,
+    "name": "Boost",
+    "description": "+100 energy",
+    "point_price": 500,
+    "filename": null,
+    "product_type": "UPDATE_NAME",
+    "energy_boost": 0
+  },
+  {
+    "id": 1,
+    "name": "Boost",
+    "description": "+100 energy",
+    "point_price": 100,
+    "filename": null,
+    "product_type": "ENERGY_BOOST",
+    "energy_boost": 100
+  },
+  {
+    "id": 2,
+    "name": "Boost",
+    "description": "+200 energy",
+    "point_price": 200,
+    "filename": null,
+    "product_type": "ENERGY_BOOST",
+    "energy_boost": 200
+  },
+  {
+    "id": 3,
+    "name": "Boost",
+    "description": "+300 energy",
+    "point_price": 300,
+    "filename": null,
+    "product_type": "ENERGY_BOOST",
+    "energy_boost": 300
+  },
+  {
+    "id": 4,
+    "name": "Boost",
+    "description": "+500 energy",
+    "point_price": 500,
+    "filename": null,
+    "product_type": "ENERGY_BOOST",
+    "energy_boost": 500
+  },
+  {
+    "id": 5,
+    "name": "Boost",
+    "description": "+10000 energy",
+    "point_price": 10000,
+    "filename": null,
+    "product_type": "ENERGY_BOOST",
+    "energy_boost": 10000
+  },
+  {
+    "id": 6,
+    "name": "Image",
+    "description": "+300 energy",
+    "point_price": 300,
+    "filename": "icon_near.svg",
+    "product_type": "UPDATE_AVATAR",
+    "energy_boost": 300
+  },
+  {
+    "id": 7,
+    "name": "Image",
+    "description": "+500 energy",
+    "point_price": 500,
+    "filename": "icon_near.svg",
+    "product_type": "UPDATE_AVATAR",
+    "energy_boost": 500
+  },
+  {
+    "id": 8,
+    "name": "Image",
+    "description": "+10000 energy",
+    "point_price": 10000,
+    "filename": "icon_ton.svg",
+    "product_type": "UPDATE_AVATAR",
+    "energy_boost": 10000
+  }
+]

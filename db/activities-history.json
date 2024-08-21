@@ -1,0 +1,106 @@
+[
+  {
+    "transaction": {
+      "id": 1,
+      "transaction_amount": "0.5",
+      "transaction_currency": "TON",
+      "transaction_time": "2024-03-26T18:17:23.459Z",
+      "source_type": "POINT_PURCHASE",
+      "user_id": 1
+    },
+    "title": "App name 1"
+  },
+  {
+    "transaction": {
+      "id": 2,
+      "transaction_amount": "0.7",
+      "transaction_currency": "NEAR",
+      "transaction_time": "2024-03-26T15:10:23.459Z",
+      "source_type": "POINT_PURCHASE",
+      "user_id": 1
+    },
+    "title": "App name 2"
+  },
+  {
+    "transaction": {
+      "id": 3,
+      "transaction_amount": "0.1",
+      "transaction_currency": "TON",
+      "transaction_time": "2024-03-26T10:17:23.459Z",
+      "source_type": "TASK_COMPLETION",
+      "user_id": 1
+    },
+    "title": "App name 3"
+  },
+  {
+    "transaction": {
+      "id": 4,
+      "transaction_amount": "0.5",
+      "transaction_currency": "DFC",
+      "transaction_time": "2024-03-25T18:17:23.459Z",
+      "source_type": "TASK_COMPLETION",
+      "user_id": 1
+    },
+    "title": "App name 4"
+  },
+  {
+    "transaction": {
+      "id": 5,
+      "transaction_amount": "0.1",
+      "transaction_currency": "DFC",
+      "transaction_time": "2024-03-25T17:17:23.459Z",
+      "source_id": 1,
+      "source_type": "TASK_COMPLETION",
+      "user_id": 1
+    },
+    "title": "App name 4"
+  },
+  {
+    "transaction": {
+      "id": 6,
+      "transaction_amount": "0.01",
+      "transaction_currency": "DFC",
+      "transaction_time": "2024-03-25T16:17:23.459Z",
+      "source_id": 1,
+      "source_type": "TASK_COMPLETION",
+      "user_id": 1
+    },
+    "title": "App name 4"
+  },
+  {
+    "transaction": {
+      "id": 7,
+      "transaction_amount": "0.5",
+      "transaction_currency": "DFC",
+      "transaction_time": "2024-03-24T18:17:23.459Z",
+      "source_id": 1,
+      "source_type": "TASK_COMPLETION",
+      "user_id": 1
+    },
+    "title": "App name 4"
+  },
+  {
+    "transaction": {
+      "id": 8,
+      "transaction_amount": "0.1",
+      "transaction_currency": "DFC",
+      "transaction_time": "2024-03-24T17:17:23.459Z",
+      "source_id": 1,
+      "source_type": "TASK_COMPLETION",
+      "user_id": 1
+    },
+    "title": "App name 4"
+  },
+  {
+    "transaction": {
+      "id": 9,
+      "transaction_amount": "0.01",
+      "transaction_currency": "DFC",
+      "transaction_time": "2024-03-24T16:17:23.459Z",
+      "source_id": 1,
+      "source_type": "TASK_COMPLETION",
+      "user_id": 1
+    },
+    "title": "App name 4"
+  }
+]

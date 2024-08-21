@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "transaction_amount": "0.5",
+    "transaction_currency": "TON",
+    "transaction_time": "2024-03-26T18:17:23.459Z",
+    "source_id": 1,
+    "source_type": "BALANCE_OPERATION",
+    "user_id": 1
+  },
+  {
+    "id": 2,
+    "transaction_amount": "-0.7",
+    "transaction_currency": "NEAR",
+    "transaction_time": "2024-03-26T15:10:23.459Z",
+    "source_id": 1,
+    "source_type": "BALANCE_OPERATION",
+    "user_id": 1
+  },
+  {
+    "id": 3,
+    "transaction_amount": "0.1",
+    "transaction_currency": "TON",
+    "transaction_time": "2024-03-26T10:17:23.459Z",
+    "source_id": 1,
+    "source_type": "BALANCE_OPERATION",
+    "user_id": 1
+  },
+  {
+    "id": 4,
+    "transaction_amount": "-0.5",
+    "transaction_currency": "DFC",
+    "transaction_time": "2024-03-25T18:17:23.459Z",
+    "source_id": 1,
+    "source_type": "BALANCE_OPERATION",
+    "user_id": 1
+  },
+  {
+    "id": 5,
+    "transaction_amount": "0.1",
+    "transaction_currency": "DFC",
+    "transaction_time": "2024-03-25T17:17:23.459Z",
+    "source_id": 1,
+    "source_type": "MULTI_CHEQUE_ACTIVATE",
+    "user_id": 1
+  },
+  {
+    "id": 6,
+    "transaction_amount": "0.01",
+    "transaction_currency": "DFC",
+    "transaction_time": "2024-03-25T16:17:23.459Z",
+    "source_id": 1,
+    "source_type": "MULTI_CHEQUE_REFERRAL_REWARD",
+    "user_id": 1
+  },
+  {
+    "id": 7,
+    "transaction_amount": "-0.5",
+    "transaction_currency": "DFC",
+    "transaction_time": "2024-03-24T18:17:23.459Z",
+    "source_id": 1,
+    "source_type": "BALANCE_OPERATION",
+    "user_id": 1
+  },
+  {
+    "id": 8,
+    "transaction_amount": "0.1",
+    "transaction_currency": "DFC",
+    "transaction_time": "2024-03-24T17:17:23.459Z",
+    "source_id": 1,
+    "source_type": "MULTI_CHEQUE_ACTIVATE",
+    "user_id": 1
+  },
+  {
+    "id": 9,
+    "transaction_amount": "0.01",
+    "transaction_currency": "DFC",
+    "transaction_time": "2024-04-24T16:17:23.459Z",
+    "source_id": 1,
+    "source_type": "MULTI_CHEQUE_REFERRAL_REWARD",
+    "user_id": 1
+  },
+  {
+    "id": 10,
+    "transaction_amount": "0.01",
+    "transaction_currency": "DFC",
+    "transaction_time": "2024-04-25T16:17:23.459Z",
+    "source_id": 1,
+    "source_type": "MULTI_CHEQUE_REFERRAL_REWARD",
+    "user_id": 1
+  },
+  {
+    "id": 11,
+    "transaction_amount": "-0.5",
+    "transaction_currency": "DFC",
+    "transaction_time": "2024-04-24T18:17:23.459Z",
+    "source_id": 1,
+    "source_type": "BALANCE_OPERATION",
+    "user_id": 1
+  },
+  {
+    "id": 12,
+    "transaction_amount": "0.1",
+    "transaction_currency": "DFC",
+    "transaction_time": "2024-04-24T17:17:23.459Z",
+    "source_id": 1,
+    "source_type": "MULTI_CHEQUE_ACTIVATE",
+    "user_id": 1
+  },
+  {
+    "id": 13,
+    "transaction_amount": "0.01",
+    "transaction_currency": "DFC",
+    "transaction_time": "2024-04-24T16:17:23.459Z",
+    "source_id": 1,
+    "source_type": "MULTI_CHEQUE_REFERRAL_REWARD",
+    "user_id": 1
+  }
+]
