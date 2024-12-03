@@ -47,11 +47,11 @@
   {
     "id": 5,
     "name": "Boost",
-    "description": "+10000 energy",
-    "point_price": 10000,
+    "description": "+100 energy",
+    "point_price": 100,
     "filename": null,
     "product_type": "ENERGY_BOOST",
-    "energy_boost": 10000
+    "energy_boost": 100
   },
   {
     "id": 6,

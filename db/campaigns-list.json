@@ -2,11 +2,12 @@
   {
     "id": 101,
     "photo_url": "https://stormgain.com/sites/default/files/2023-08/tether-price-prediction-main.jpg",
-    "title": "Tether Company",
+    "title": "CAP 2.0 Campaign",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "energy_cost": 10,
     "total_rewards_amount": 0,
-    "reward_currencies": ["NEAR", "TON"]
+    "reward_currencies": ["NEAR", "TON"],
+    "is_completed_by_user": false
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "energy_cost": 10,
     "total_rewards_amount": 500.12345,
-    "reward_currencies": ["NEAR", "TON"]
+    "reward_currencies": ["NEAR"],
+    "is_completed_by_user": false
   },
   {
     "id": 3,
@@ -24,6 +26,7 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "energy_cost": 10,
     "total_rewards_amount": 5000000,
-    "reward_currencies": ["NEAR", "TON"]
+    "reward_currencies": ["TON"],
+    "is_completed_by_user": false
   }
 ]

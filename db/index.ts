@@ -5,6 +5,9 @@ import manifestFile from './manifest.json';
 import activitiesHistoryData from './activities-history.json';
 import campaignsList from './campaigns-list.json';
 import market from './market.json';
+import refLeaderboard from './ref-leaderboard.json';
+import pacmanJson from './pacman.json';
+import pacmanResult from './pacman-result.json';
 
 const balance = {
   id: 1,
@@ -83,20 +86,29 @@ const wallet1 = {
 const user = userData;
 
 const cheque = {
-  amount: 10000000,
-  currency: {
-      name: "Toncoin",
-      short_name: "TON",
-      digits: 9,
-      price: 2.42,
-      image: "icon_ton.svg",
-      get_image: "https://volreviews.com/api/v1/images/icon_ton.svg"
+  "resp_status": "ok",
+  "amount": 14950000.0,
+  "is_pro": true,
+  "is_boost": false,
+  "is_for_new_users": false,
+  "is_active": true,
+  "is_has_password": false,
+  "share_id": "3k7Ofcl",
+  "candidate_id": null,
+  "currency": {
+      "name": "TON",
+      "short_name": "TON",
+      "digits": 9,
+      "price": 5.110849999999999,
+      "image": "icon_ton.svg",
+      "is_native": true,
+      "network_id": [
+          1
+      ],
+      "coin_id": 1
   },
-  referal_reward: 1000000,
-  locked_amount: 30000000,
-  is_pro: true,
-  is_has_password: true,
-  candidate_id: 12345
+  "legacy_ref_link": "https://t.me/https://t.me/dknddsjn_bot/cheque?startapp=Y2hlcXVlX2lkPWdBQUFBQUJuSVI5WjlWR3FIcW5wT0xRU3A2NDhWTWxIUUllNmxNT2ZkSFNMNFF5QkhzZlktSU1SeU5oTmg3a1VJa29rc0F4a1R2UFZ2N0ZSdG9CaXRsMGo3dFFLQlNfekZRPT0mcmVmX3VzZXI9cjM2OTkxOTQ0Mw==",
+  "legacy_text": "Promotion pool for 1.018 TON (5.2$): 34 participants will each receive 0.01495 TON (0.08$)  with a referral reward of 0.01 TON (0.05$)"
 }
 
 const logs = [
@@ -255,4 +267,4 @@ const statistic = {
 // }
 
 
-export { campaignsList, user, cheque, logs, statistic, balance, campaign, profile, manifestFile, activitiesHistoryData, market }
+export { refLeaderboard, campaignsList, user, cheque, logs, statistic, balance, campaign, profile, manifestFile, activitiesHistoryData, market, pacmanJson, pacmanResult }

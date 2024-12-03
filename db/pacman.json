@@ -1,0 +1,20 @@
+{
+  "game_attempts": 4,
+  "user_id": 0,
+  "ghost_speed": 0,
+  "player_speed": 0,
+  "level": 0,
+  "start": true,
+  "last_results": [
+    {
+      "id": 0,
+      "score": 0,
+      "kill_count": 0,
+      "is_win": true,
+      "points_earned": 0,
+      "tickets_earned": 0,
+      "created": "2024-11-25T14:51:36.959Z",
+      "user_id": 0
+    }
+  ]
+}

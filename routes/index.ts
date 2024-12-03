@@ -1,5 +1,5 @@
 import { Router, Request, Response } from "express";
-import { campaignsList, user, cheque, statistic, balance, campaign, profile, manifestFile, activitiesHistoryData, market } from "../db";
+import { campaignsList, user, cheque, statistic, refLeaderboard, campaign, profile, manifestFile, activitiesHistoryData, market, pacmanJson, pacmanResult } from "../db";
 import { stages, campaignInfo } from '../db/campaign'
 import { activities } from "../db/activities";
 import dailyTasks from '../db/daily-task.json';
@@ -25,12 +25,16 @@ const images = Router();
 const files = Router();
 const ton = Router();
 const twitter = Router();
+const tron = Router();
+const pacman = Router();
 
 let attemps = 0;
 let changedUser: typeof user = {
   ...user,
   total_balance: 777.7
 }
+
+let pacmanJsonClone = {...pacmanJson};
 
 let isTermsAccepted = true;
 
@@ -104,10 +108,7 @@ chequeInitDataRoute.post('/checkInitData', (req: Request, res: Response) => {
 
 userRoute.get('/users',  (req: Request, res: Response) => {
   const data = response(user);
-
-  setTimeout(() => {
-    res.status(200).json(data);
-  }, 4000)
+  res.status(200).json(data);
 })
 
 userRoute.get('/users/check',  (req: Request, res: Response) => {
@@ -133,16 +134,16 @@ userRoute.post('/users/:userId/terms',  (req: Request, res: Response) => {
 withdrawRoute.post('/withdraw', (req: Request, res: Response) => {
   user.total_balance = 300;
   console.log(req.body)
-  setTimeout(() => {
-    res.status(200).json({ status: "ok" })
-  }, 2000)
-  // res.status(401).json(error);
+  // setTimeout(() => {
+  //   res.status(200).json({ status: "ok" })
+  // }, 4000)
+  res.status(401).json(error);
 })
 
 chequesRoute.get('/cheques/:chequeId', (req: Request, res: Response) => {
   const data = response(cheque);
   setTimeout(() => {
-  res.status(200).json(data)
+  res.status(200).json(cheque)
   }, 1000)
   
   //res.status(401).json(error)
@@ -234,9 +235,14 @@ activitiesRoute.get('/quests/user/:userId', (req: Request, res: Response) => {
 })
 
 activitiesRoute.get('/quests/organization', (req: Request, res: Response) => {
-  setTimeout(() => {
-    res.status(200).json(activities.organizations);
-  }, 6000)
+  res.status(200).json(activities.organizations);
+})
+activitiesRoute.get('/quests/leaderboard/referrals/me', (req: Request, res: Response) => {
+  res.status(200).json(null);
+})
+
+activitiesRoute.get('/quests/leaderboard/referrals', (req: Request, res: Response) => {
+  res.status(200).json(refLeaderboard);
 })
 
 activitiesRoute.get('/quests/leaderboard', (req: Request, res: Response) => {
@@ -250,26 +256,35 @@ activitiesRoute.get('/quests/leaderboard/:userId', (req: Request, res: Response)
 activitiesRoute.get('/quests/campaign/info/:campaignId', (req: Request, res: Response) => {
   campaingData = {
     ...campaignInfo,
-    stages: [stages[0]]
+    stages
   }
-  res.status(200).json(campaingData);
+
+  setTimeout(() => {
+    res.status(200).json(campaingData);
+  }, 3000)
+  
 })
 
 activitiesRoute.get('/quests/campaign', (req: Request, res: Response) => {
   //campaignsList
-    res.status(200).json(campaignsList);
+  res.status(200).json(campaignsList);
+})
+
+activitiesRoute.get('/quests/ref_id', (req: Request, res: Response) => {
+  res.status(200).json('test');
 })
 
 activitiesRoute.get('/recurring/me', (req: Request, res: Response) => {
   setTimeout(() => {
+    //res.status(200).json([])
     res.status(200).json(dailyTasks)
   }, 3000)
 })
 
 activitiesRoute.put('/recurring/claim/:taskId', (req: Request, res: Response) => {
   const taskId = req.params.taskId;
-  const taskIndex = dailyTasks.findIndex(task => task.id === Number(taskId));
-  const task = dailyTasks[taskIndex];
+  const taskIndex = dailyTasks[0].recurring_tasks.findIndex(task => task.id === Number(taskId));
+  const task = dailyTasks[0].recurring_tasks[taskIndex];
   
   if(!task.is_completed) {
     task.is_completed = true
@@ -278,7 +293,11 @@ activitiesRoute.put('/recurring/claim/:taskId', (req: Request, res: Response) =>
   } else {
 
   }
-  res.status(200).json(task);
+  setTimeout(() => {
+    res.status(200).json(task);
+    //res.status(401).json({})
+  }, 3000)
+  
 
 });
 
@@ -294,28 +313,28 @@ activitiesRoute.put('/quests/task/:taskId/claim', (req: Request, res: Response) 
   const { taskId } = req.params;
   const stage = campaingData.stages[0]
    //  Number(taskId) == task.id ? ({...task, is_completed: true }) : task
-  stage.tasks =  stage.tasks.map((task) => {
-    if(Number(taskId) !== task.id) {
-      return task;
-    }
-    //@ts-igonre
-    if(!task.is_completed) {
-      return ({...task, is_completed: true })
-    } else {
-      return ({...task, is_reward_claimed: true })
-    }
+  // stage.tasks =  stage.tasks.map((task) => {
+  //   if(Number(taskId) !== task.id) {
+  //     return task;
+  //   }
+  //   //@ts-igonre
+  //   if(!task.is_completed) {
+  //     return ({...task, is_completed: true })
+  //   } else {
+  //     return ({...task, is_reward_claimed: true })
+  //   }
 
 
-  })
+  // })
 
   campaingData.claimed_rewards_percentage += 20;
 
-  res.status(200).json(campaingData);
+  //res.status(200).json(campaingData);
   // res.status(401).json({});
 
-  // setTimeout(() => {
-  //   res.status(401).json({});
-  // }, 15000)
+  setTimeout(() => {
+    res.status(200).json(campaingData);
+  }, 3000)
 })
 
 activitiesRoute.get('/quests/account/me/info', (req: Request, res: Response) => {
@@ -343,7 +362,10 @@ activitiesRoute.post('/quests/market/purchase', (req: Request, res: Response) =>
     "new_points_balance": 777
   }
 
-  res.status(200).json(data);
+  setTimeout(() => {
+    res.status(200).json(data);
+  }, 4000)
+  
 
   // res.status(200).json(data);
 })
@@ -361,7 +383,11 @@ activitiesRoute.post('/ton/disconnect', (req: Request, res: Response) => {
 
 walletHistory.get('/wallet/history/:userId', (req: Request, res: Response) => {
   setTimeout(() => {  res.status(200).json(walletHistoryData); }, 4000)
- 
+})
+
+walletHistory.get('/wallet/history/full/me', (req: Request, res: Response) => {
+  setTimeout(() => {  res.status(200).json(walletHistoryData); }, 4000);
+  //res.status(401).json({})
 })
 
 
@@ -421,6 +447,21 @@ twitter.post('/twitter/connect', (req, res) => {
 
 twitter.put('/twitter/disconnect/:userId', (req, res) => {
   res.status(200).json({})
+});
+
+pacman.get('/game/user/me',  (req, res) => {
+  res.status(200).json(pacmanJsonClone)
+});
+
+pacman.post('/game/user/result',  (req, res) => {
+  console.log(req.body);
+
+  pacmanJsonClone.level += 1;
+
+  setTimeout(() => {
+    res.status(200).json(pacmanResult);
+  }, 4000)
+  
 })
 
 export {
@@ -436,5 +477,6 @@ export {
   images,
   files,
   ton,
-  twitter
+  twitter,
+  pacman
 }

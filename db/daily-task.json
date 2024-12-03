@@ -1,47 +1,50 @@
 [
   {
-    "id": 0,
-    "title": "Taks 1",
-    "description": "Lorem ipsum dolor ",
-    "minutes_period": 0,
-    "priority": 0,
-    "payload": "string",
-    "is_available": false,
-    "is_completed": true,
-    "is_reward_claimed": true,
-    "customer_title": "App name",
+    "customer_title": "Crypto Ads Platform",
     "customer_img": "https://img.freepik.com/premium-vector/avatar-icon002_750950-52.jpg",
-    "reward_amount": "10",
-    "reward_currency": "TON"
-  },
-  {
-    "id": 1,
-    "title": "Taks 2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "minutes_period": 0,
-    "priority": 0,
-    "payload": "string",
-    "is_available": true,
-    "is_completed": false,
-    "is_reward_claimed": false,
-    "customer_title": "App name",
-    "customer_img": "https://img.freepik.com/premium-vector/avatar-icon002_750950-52.jpg",
-    "reward_amount": "5",
-    "reward_currency": "POINTS"
-  },
-  {
-    "id": 3,
-    "title": "Taks 3",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "minutes_period": 0,
-    "priority": 0,
-    "payload": "string",
-    "is_available": true,
-    "is_completed": false,
-    "is_reward_claimed": false,
-    "customer_title": "App name",
-    "customer_img": "https://img.freepik.com/premium-vector/avatar-icon002_750950-52.jpg",
-    "reward_amount": "15",
-    "reward_currency": "USDT"
+    "recurring_tasks": [
+      {
+        "id": 0,
+        "title": "Suscribe to Telegram",
+        "description": "Lorem ipsum dolor ",
+        "minutes_period": 0,
+        "priority": 0,
+        "payload": "string",
+        "is_available": false,
+        "is_completed": true,
+        "is_reward_claimed": true,
+        "last_claim_date": "2024-09-25T12:02:05.312393",
+        "reward_amount": "10",
+        "reward_currency": "TON"
+      },
+      {
+        "id": 1,
+        "title": "Suscribe to Telegram",
+        "description": "Lorem ipsum dolor ",
+        "minutes_period": 0,
+        "priority": 0,
+        "payload": "string",
+        "is_available": false,
+        "is_completed": true,
+        "is_reward_claimed": true,
+        "last_claim_date": "2024-09-25T12:02:05.312393",
+        "reward_amount": "10",
+        "reward_currency": "TON"
+      },
+      {
+        "id": 2,
+        "title": "Suscribe to Telegram",
+        "description": "Lorem ipsum dolor ",
+        "minutes_period": 0,
+        "priority": 0,
+        "payload": "string",
+        "is_available": false,
+        "is_completed": true,
+        "is_reward_claimed": true,
+        "last_claim_date": "2024-09-25T12:02:05.312393",
+        "reward_amount": "10",
+        "reward_currency": "TON"
+      }
+    ]
   }
 ]

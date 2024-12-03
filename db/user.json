@@ -110,7 +110,55 @@
       "balance": 0,
       "balance_amount": 0.359,
       "balance_usd": 0.359
+    },
+    {
+      "coin": {
+        "name": "IVfun",
+        "short_name": "IVfun",
+        "digits": 24,
+        "price": 2.7,
+        "image": "icon_near.svg",
+        "get_image": "https://mycapbot.com/api/v1/images/icon_near.svg",
+        "is_native": true,
+        "network_id": [3],
+        "coin_id": 1
+      },
+      "balance": 0,
+      "balance_amount": 12.3,
+      "balance_usd": 33.21
+    },
+    {
+      "coin": {
+        "name": "EGGS",
+        "short_name": "EGGS",
+        "digits": 24,
+        "price": 2.7,
+        "image": "icon_near.svg",
+        "get_image": "https://mycapbot.com/api/v1/images/icon_near.svg",
+        "is_native": true,
+        "network_id": [1, 2],
+        "coin_id": 1
+      },
+      "balance": 0,
+      "balance_amount": 12.3,
+      "balance_usd": 33.21
+    },
+    {
+      "coin": {
+        "name": "TICKET",
+        "short_name": "TICKET",
+        "digits": 0,
+        "price": 0.0,
+        "image": "TICKET.png",
+        "is_native": true,
+        "network_id": [],
+        "coin_id": 6
+      },
+      "balance": 10,
+      "balance_amount": 0.0,
+      "balance_usd": 0.0
     }
   ],
-  "candidate_id": null
+  "candidate_id": null,
+  "points_balance": "1111"
 }

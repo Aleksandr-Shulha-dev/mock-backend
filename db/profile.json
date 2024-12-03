@@ -1,19 +1,18 @@
 {
-  "tasks_completed": 12,
-  "coins_earned": [
+  "points_earned": 3025,
+  "tasks_completed": 5,
+  "coins_earned": [],
+  "connected_wallets": [
     {
-      "short_name": "TON",
-      "earned_amount": 1.123
-    },
-    {
-      "short_name": "NEAR",
-      "earned_amount": 1.123
+      "network_short_name": "TON",
+      "address": "UQDCP8y43-z-2lK2Cs9myJVyAzgc6G_W8gZ1sMmXgUHiArQa"
     }
   ],
-  "referrals": 15,
-  "connected_wallets": [],
-  "test": {
-    "network_short_name": "TON",
-    "address": "UQCje1BcHptz4-YsRlI7fJIJpk99o1wyi5DCoMHSbMfUP75f"
-  }
+  "user_tier": 1,
+  "total_referees_num": 0,
+  "eligible_referees_num": 0,
+  "referror_earnings": [],
+  "potential_earnings": {},
+  "x_screen_name": null,
+  "x_user_id": null
 }

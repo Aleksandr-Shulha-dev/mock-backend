@@ -13,7 +13,8 @@ import {
   images,
   files,
   ton,
-  twitter
+  twitter,
+  pacman
 } from './routes';
 
 import cors from 'cors';
@@ -42,7 +43,8 @@ app.use(
   images,
   files,
   ton,
-  twitter
+  twitter,
+  pacman
 )
 
 app.listen(port, () => {
